@@ -23,7 +23,7 @@
     height: 85px;
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1020px) {
     .heder__nav {
         display: flex;
         flex-direction: column;
