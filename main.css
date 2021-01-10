@@ -1,0 +1,415 @@
+.main {                                 /*нужно ли main разбивать на отдельные файлы, например по секциям?*/
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.content {
+    width: 1200px;
+    display: flex;
+    margin: 0 20px 0 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.story {
+    display: flex;
+    width: 100%;
+    min-height: 750px;
+    flex-direction: column;
+}
+
+.story__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50%;
+}
+
+.text_curcive {
+    font-family: 'Kaushan', 'Arial', sans-serif;
+    font-size: 24pt;
+    color: #333333;
+}
+
+.text_large {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-size: 30pt;
+    font-weight: 700;
+    color: #333333;
+    text-transform: uppercase;
+}
+
+.story__text .text_large{
+    margin: 20px 0 45px 0;
+}
+
+.story__line {
+    display: flex;
+    align-items: flex-start;
+    height: 60px;
+}
+
+.text_small {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 12pt;
+    color: #999999;
+    display: flex;
+    max-width: 960px;
+    text-align: center;
+    line-height: 25px;
+}
+
+.story__cards {
+    display: flex;
+    min-height: 50%;
+    justify-content: space-between;
+}
+
+.statistic {
+    display: flex;
+    width: 1920px;
+    min-height: 270px;
+    background-color: #95e1d3;
+    justify-content: center;
+}
+
+.statistic__block {
+    display: flex;
+    max-width: 1200px;
+    min-height: 270px;
+    flex-wrap: wrap;
+}
+
+.statistic__element {
+    display: flex;
+    width: 240px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: solid 1px #b5eae0;
+}
+
+.statistic__element_border-end {
+    border-right: solid 1px #b5eae0;
+}
+
+.statistic__element_large {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-size: 72pt;
+    font-weight: 700;
+    color: white;
+}
+
+.statistic__element_small {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-size: 14pt;
+    font-weight: 400;
+    color: white;
+    text-transform: uppercase;
+    height: 40px;
+    line-height: 40px;
+}
+
+.service {
+    display: flex;
+    width: 100%;
+    min-height: 650px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service__text {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.service__text .text_large{
+    margin: 20px 0 45px 0;
+}
+
+.service__line {
+    display: flex;
+    height: 60px;
+    align-items: flex-start;
+}
+
+.service__card {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    flex-wrap: wrap;
+}
+
+.service__block {
+    display: flex;
+    width: 33.333%;
+    height: 170px;
+}
+
+.service__img {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 25%;
+    margin-top: 4px;
+}
+
+.service__description {
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.service__description .name-description {
+    margin-bottom: 20px;
+}
+
+.name-description {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-size: 14pt;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #333333;
+}
+
+.description {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 12pt;
+    color: #999999;
+    font-weight: 400;
+}
+
+.devices {                              /*как сделать частичное перекрытие изображений одно на другое (position: absolute; top. left...)*/
+    display: flex;                      /*нужно ли сохранять фильтра на картинках?*/
+    background: url(../img/main/devices/background.png) center;
+    width: 1920px;
+    height: 941px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.devices__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 230px;
+}
+
+.devices__text .text_large {
+    display: flex;
+    margin: 20px 0 45px 0;
+}
+
+.we-do {                                /*можно ли оформить такой интерактивный блок (выпадающее описание)без java script?*/
+    display: flex;
+    width: 100%;
+    height: 800px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.we-do__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 45%;
+}
+
+.we-do__text .text_large {
+    margin: 20px 0 45px 0;
+}
+
+.we-do__text .text_small {
+    margin-top: 45px;
+}
+
+.we-do__review {
+    display: flex;
+    width: 100%;
+    height: 60%;
+}
+
+.we-do__img {
+    display: flex;
+    width: 55%;
+    align-items: flex-start;
+}
+
+.we-do__description {
+    display: flex;
+    width: 50%;
+}
+
+.we-do__list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.we-do__item {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    border: 1px solid #e5e5e5;
+    align-items: center;
+    justify-content: space-between;
+    margin: 7px 0 7px 0;
+    text-decoration: none;
+}
+
+.we-do__item:hover {
+    transition: background-color 0.3s;
+    background: rgba(229, 229, 229, 0.5);
+}
+
+.we-do__item:first-child {
+    margin: 0 0 7px 0;
+}
+
+.we-do__item:last-child {
+    margin: 7px 0 0 0;
+}
+
+.we-do__name {
+    display: flex;
+    align-items: center;
+}
+
+.we-do__name img{
+    margin: 0 14px 0 14px;
+}
+
+.arrow-down {
+    display: flex;
+    margin: 0 14px 0 14px;
+}
+
+.speech {
+    display: flex;
+    width: 1920px;
+    min-height: 290px;
+    background-color: #f8f8f8;
+    justify-content: center;
+}
+
+.speech__block {
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow-left {
+    display: flex;
+}
+
+.speech__text{
+    display: flex;
+    max-width: 775px;
+    height: 160px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.speech__text_curcive {
+    font-size: 17pt;
+    font-style: italic;
+    font-weight: 100;
+    text-align: left;
+}
+
+.speech_sign {
+    display: flex;
+    align-items: center;
+}
+
+.speech_sign p {
+    margin-left: 10px;
+}
+
+.team {
+    display: flex;
+    width: 100%;
+    height: 1050px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40%;
+}
+
+.team__text .text_large {
+    margin: 20px 0 45px 0;
+}
+
+.team__text .text_small {
+    margin-top: 45px;
+}
+
+.team__cards {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.team__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.team__item p {
+    margin-top: 30px;
+}
+
+.team__item .description {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.shift {                            /*не могу нормально позиционировать картинки и текст (смещается)*/
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+    margin-bottom: 10px;
+}
+
+.shadow {
+    position: absolute;
+    width: 380px;
+    height: 470px;
+    background-color: #95e1d3;
+    top: 10px;
+    left: 10px;
+}
+
+.logos {
+    display: flex;
+    width: 1920px;
+    min-height: 250px;
+    justify-content: center;
+    background-color: #f8f8f8;
+}
+
+.logos__emblem {
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+}
+
