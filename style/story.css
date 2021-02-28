@@ -1,0 +1,118 @@
+.story {
+    display: flex;
+    width: 100%;
+    min-height: 750px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.story__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.story__text .text_large{
+    margin: 20px 0 45px 0;
+}
+
+.story__line {
+    display: flex;
+    align-items: flex-start;
+    height: 60px;
+}
+
+.story__cards {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.story__card {
+    width: 30%;
+    background-color: #95e1d3;
+    position: relative;
+}
+
+.story__card:hover .story__img {
+    transform: translate3d(-10px, -10px, 0);
+}
+
+.story__card:hover .story__img img {
+    opacity: 0.1;
+}
+
+.story__card:hover .story__logo {
+    opacity: 1;
+}
+
+.story__img {
+    background: linear-gradient(to bottom, #f38181, #fce38a);
+    transition: transform 0.1s linear;
+}
+
+.story__photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.1s linear;
+    display: block;
+}
+
+.story__logo {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 45%;
+    left: -10px;
+    z-index: 2;
+    transform: translate3d(0, -50%, 0); 
+    opacity: 0;
+    transition: opacity 0.1s linear;
+
+}
+
+.story__logo a {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+.story__logo a:hover {
+    color: #f38181;
+}
+
+
+@media screen and (max-width: 420px) {
+       
+    .story__cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .story__text .text_curcive, .service__text .text_curcive, .we-do__text .text_curcive, .team__text .text_curcive{
+        margin: 20px 0 0 0;
+    }
+
+    .story__text .text_large, .service__text .text_large, .we-do__text .text_large, .team__text .text_large{
+        margin: 10px 0 10px 0;
+    }
+    
+    .story__line {
+        height: 30px;
+    }
+    .story__card {
+        width: 80%;
+        margin: 10px 0;
+    }
+}

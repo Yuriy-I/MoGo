@@ -1,0 +1,119 @@
+.we-do {                                /*можно ли оформить такой интерактивный блок (выпадающее описание)без java script?*/
+    display: flex;
+    width: 100%;
+    /* height: 800px; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.we-do__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    /* height: 45%; */
+}
+
+.we-do__text .text_large {
+    margin: 20px 0 45px 0;
+}
+
+.we-do__text .text_small {
+    margin-top: 45px;
+}
+
+.we-do__review {
+    display: flex;
+    width: 100%;
+    /* height: 60%; */
+    /* flex-wrap: wrap;*/   /*не убирается при достаточной ширине*/
+}
+
+.we-do__img {
+    display: flex;
+    width: 55%;
+    min-width: 300px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.we-do__img img{
+    width: 90%;
+}
+
+.we-do__description {
+    display: flex;
+    width: 50%;
+    min-width: 300px;
+}
+
+.we-do__list {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+}
+
+.we-do__item {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    border: 1px solid #e5e5e5;
+    align-items: center;
+    justify-content: space-between;
+    margin: 7px 0 7px 0;
+    text-decoration: none;
+}
+
+.we-do__item:hover {
+    transition: background-color 0.3s;
+    background: rgba(229, 229, 229, 0.5);
+}
+
+.we-do__item:first-child {
+    margin: 0 0 7px 0;
+}
+
+.we-do__item:last-child {
+    margin: 7px 0 0 0;
+}
+
+.we-do__name {
+    display: flex;
+    align-items: center;
+}
+
+.we-do__name img {
+    margin: 0 14px 0 14px;
+}
+
+.arrow-down {
+    display: flex;
+    margin: 0 14px 0 14px;
+}
+
+.tabs__body {
+
+}
+
+.tabs__block {
+    display: none;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 12pt;
+    color: #999999;
+    padding: 5px 0;
+    line-height: 18pt;
+    text-align: justify;
+}
+
+.tabs__block:target {
+    display: block;
+}
+
+
+@media screen and (max-width: 420px) {
+   
+    .we-do__review {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

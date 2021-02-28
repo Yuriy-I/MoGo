@@ -1,0 +1,44 @@
+.devices {                              /*как сделать частичное перекрытие изображений одно на другое (position: relative; top. left...)*/
+    display: flex;                      /*нужно ли сохранять фильтра на картинках?*/
+    /* background: url(../img/main/devices/background.png) center; */
+    /* width: 100vw; */
+    /*max-width: 1920px;
+    height: 940px; */
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.device__pic {
+    width: 100vw;
+    min-width: 768px;
+    /* max-width: 1920px;*/
+    /* height: 940px;  */
+
+}
+
+.devices__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 230px;
+    position: absolute;
+}
+
+.devices__text .text_large {
+    display: flex;
+    margin: 20px 0 45px 0;
+}
+
+@media screen and (max-width: 420px) {
+   
+    .devices__text {
+        height: 100px;
+    }
+
+    .devices__text .text_large {
+        margin: 5px 0 10px 0;
+    }
+
+}
